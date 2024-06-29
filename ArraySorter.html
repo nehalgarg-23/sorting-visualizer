@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Sorting Visualizer</title>
+  <link rel="stylesheet" href="arraystyle.css">
+</head>
+<body>
+
+  
+  <div class="content">
+    <div class="main-conatiner">
+  <h1> Sorting Alogrithm Visualizer</h1>
+  <div class="conatiner">
+  <div class="upper-text">
+    <label for="array-input">Enter an array of elements :</label>
+    <input type="text" id="array-input" placeholder=" nos. seperated by comma">
+    <button class="generate" onclick="generateArray()">Generate Array</button>
+  </div>
+  </div>
+  
+    <label for="sort-algorithm">Select a sorting algorithm:</label>
+    <select id="sort-algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="merge">Merge Sort</option>
+    </div>
+      <!-- Add more sorting algorithms here -->
+    </select>
+    <button onclick="sortArray()" >Sort Array</button>
+  </div>
+  <h2>ARRAY</h2>
+  <div id="array-container">
+ 
+  </div>
+  <p class="swap"></p>
+    <h2 class="steps">Steps</h2>
+  <div id="steps-container"></div>
+</div>
+<script src="arraysort.js"></script>
+</body>
+</html>
